@@ -183,8 +183,15 @@ const char* AGSLinux::GetAllegroFailUserHint()
   return "Make sure you have latest version of Allegro 4 libraries installed, and X server is running.";
 }
 
+extern int INIreadint (const char *sectn, const char *item, int errornosect = 1);
+
 eScriptSystemOSID AGSLinux::GetSystemOSID() {
-  return eOS_Linux;
+  int fake_win =  INIreadint("misc", "fake_os", 0);
+  if (fake_win > 0) {
+    return (eScriptSystemOSID)fake_win;
+  } else {
+    return eOS_Linux;
+  }
 }
 
 int AGSLinux::InitializeCDPlayer() {
