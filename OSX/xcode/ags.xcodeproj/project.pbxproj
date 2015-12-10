@@ -209,7 +209,7 @@
 		60CA3DAB160713FF00CFB3BD /* consoleoutputtarget.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 60CA3BAD160713FE00CFB3BD /* consoleoutputtarget.cpp */; };
 		60CA3DAC160713FF00CFB3BD /* debug.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 60CA3BAF160713FE00CFB3BD /* debug.cpp */; };
 		60CA3DAD160713FF00CFB3BD /* filebasedagsdebugger.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 60CA3BB3160713FE00CFB3BD /* filebasedagsdebugger.cpp */; };
-		60CA3DAE160713FF00CFB3BD /* rawfileoutputtarget.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 60CA3BB5160713FE00CFB3BD /* rawfileoutputtarget.cpp */; };
+		60CA3DAE160713FF00CFB3BD /* logfile.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 60CA3BB5160713FE00CFB3BD /* logfile.cpp */; };
 		60CA3DAF160713FF00CFB3BD /* mousew32.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 60CA3BB8160713FE00CFB3BD /* mousew32.cpp */; };
 		60CA3DB1160713FF00CFB3BD /* fonts_engine.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 60CA3BBC160713FE00CFB3BD /* fonts_engine.cpp */; };
 		60CA3DB2160713FF00CFB3BD /* ali3dogl.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 60CA3BBF160713FE00CFB3BD /* ali3dogl.cpp */; };
@@ -326,6 +326,8 @@
 		DBCDB73B180EE47C00FF80B1 /* libdumb.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DBCDB739180EE47C00FF80B1 /* libdumb.a */; };
 		DBCDB73E180EE53500FF80B1 /* pe.c in Sources */ = {isa = PBXBuildFile; fileRef = DBCDB73C180EE53500FF80B1 /* pe.c */; };
 		DBCDB740180EEA6C00FF80B1 /* alplmac.mm in Sources */ = {isa = PBXBuildFile; fileRef = DBCDB73F180EEA6C00FF80B1 /* alplmac.mm */; };
+		FB25F7011C19D74A004C8DFD /* gfx_util.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FB25F6FF1C19D74A004C8DFD /* gfx_util.cpp */; };
+		FB25F7041C19D78F004C8DFD /* speech.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FB25F7021C19D78F004C8DFD /* speech.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -809,8 +811,8 @@
 		60CA3BB2160713FE00CFB3BD /* dummyagsdebugger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = dummyagsdebugger.h; sourceTree = "<group>"; };
 		60CA3BB3160713FE00CFB3BD /* filebasedagsdebugger.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = filebasedagsdebugger.cpp; sourceTree = "<group>"; };
 		60CA3BB4160713FE00CFB3BD /* filebasedagsdebugger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = filebasedagsdebugger.h; sourceTree = "<group>"; };
-		60CA3BB5160713FE00CFB3BD /* rawfileoutputtarget.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = rawfileoutputtarget.cpp; sourceTree = "<group>"; };
-		60CA3BB6160713FE00CFB3BD /* rawfileoutputtarget.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = rawfileoutputtarget.h; sourceTree = "<group>"; };
+		60CA3BB5160713FE00CFB3BD /* logfile.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = logfile.cpp; sourceTree = "<group>"; };
+		60CA3BB6160713FE00CFB3BD /* logfile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = logfile.h; sourceTree = "<group>"; };
 		60CA3BB8160713FE00CFB3BD /* mousew32.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = mousew32.cpp; sourceTree = "<group>"; };
 		60CA3BB9160713FE00CFB3BD /* mousew32.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mousew32.h; sourceTree = "<group>"; };
 		60CA3BBC160713FE00CFB3BD /* fonts_engine.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = fonts_engine.cpp; sourceTree = "<group>"; };
@@ -1024,6 +1026,10 @@
 		DBCDB73C180EE53500FF80B1 /* pe.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = pe.c; path = util/pe.c; sourceTree = "<group>"; };
 		DBCDB73D180EE53500FF80B1 /* pe.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = pe.h; path = util/pe.h; sourceTree = "<group>"; };
 		DBCDB73F180EEA6C00FF80B1 /* alplmac.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = alplmac.mm; sourceTree = "<group>"; };
+		FB25F6FF1C19D74A004C8DFD /* gfx_util.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = gfx_util.cpp; sourceTree = "<group>"; };
+		FB25F7001C19D74A004C8DFD /* gfx_util.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = gfx_util.h; sourceTree = "<group>"; };
+		FB25F7021C19D78F004C8DFD /* speech.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = speech.cpp; sourceTree = "<group>"; };
+		FB25F7031C19D78F004C8DFD /* speech.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = speech.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -1534,6 +1540,8 @@
 		60CA3AA8160713FD00CFB3BD /* ac */ = {
 			isa = PBXGroup;
 			children = (
+				FB25F7021C19D78F004C8DFD /* speech.cpp */,
+				FB25F7031C19D78F004C8DFD /* speech.h */,
 				608781941695922900AC84FE /* global_api.cpp */,
 				60DC155016675BBE002D0474 /* statobj */,
 				60DC154916675B70002D0474 /* richgamemedia.cpp */,
@@ -1813,8 +1821,8 @@
 				60CA3BB2160713FE00CFB3BD /* dummyagsdebugger.h */,
 				60CA3BB3160713FE00CFB3BD /* filebasedagsdebugger.cpp */,
 				60CA3BB4160713FE00CFB3BD /* filebasedagsdebugger.h */,
-				60CA3BB5160713FE00CFB3BD /* rawfileoutputtarget.cpp */,
-				60CA3BB6160713FE00CFB3BD /* rawfileoutputtarget.h */,
+				60CA3BB5160713FE00CFB3BD /* logfile.cpp */,
+				60CA3BB6160713FE00CFB3BD /* logfile.h */,
 			);
 			path = debug;
 			sourceTree = "<group>";
@@ -1839,6 +1847,8 @@
 		60CA3BBD160713FE00CFB3BD /* gfx */ = {
 			isa = PBXGroup;
 			children = (
+				FB25F6FF1C19D74A004C8DFD /* gfx_util.cpp */,
+				FB25F7001C19D74A004C8DFD /* gfx_util.h */,
 				60898DCB160785DD009E152F /* gfxfilter_hq3x.cpp */,
 				60898DC9160785CB009E152F /* gfxfilter_hq2x.cpp */,
 				60CA3BBE160713FE00CFB3BD /* ali3d.h */,
@@ -2465,8 +2475,9 @@
 				60CA3DA5160713FF00CFB3BD /* walkbehind.cpp in Sources */,
 				60CA3DAB160713FF00CFB3BD /* consoleoutputtarget.cpp in Sources */,
 				60CA3DAC160713FF00CFB3BD /* debug.cpp in Sources */,
+				FB25F7041C19D78F004C8DFD /* speech.cpp in Sources */,
 				60CA3DAD160713FF00CFB3BD /* filebasedagsdebugger.cpp in Sources */,
-				60CA3DAE160713FF00CFB3BD /* rawfileoutputtarget.cpp in Sources */,
+				60CA3DAE160713FF00CFB3BD /* logfile.cpp in Sources */,
 				60CA3DAF160713FF00CFB3BD /* mousew32.cpp in Sources */,
 				60CA3DB1160713FF00CFB3BD /* fonts_engine.cpp in Sources */,
 				60CA3DB2160713FF00CFB3BD /* ali3dogl.cpp in Sources */,
@@ -2474,6 +2485,7 @@
 				60CA3DB4160713FF00CFB3BD /* blender.cpp in Sources */,
 				60CA3DB5160713FF00CFB3BD /* color_engine.cpp in Sources */,
 				60CA3DB6160713FF00CFB3BD /* gfxfilter.cpp in Sources */,
+				FB25F7011C19D74A004C8DFD /* gfx_util.cpp in Sources */,
 				60CA3DB7160713FF00CFB3BD /* gfxfilter_aad3d.cpp in Sources */,
 				60CA3DB8160713FF00CFB3BD /* gfxfilter_allegro.cpp in Sources */,
 				60CA3DB9160713FF00CFB3BD /* gfxfilter_d3d.cpp in Sources */,
